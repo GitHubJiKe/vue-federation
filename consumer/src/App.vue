@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    I am in cousumer
     <OtherComp />
   </div>
 </template>
@@ -16,10 +17,10 @@ const OtherComp = defineAsyncComponent(() => import("host/HelloWorld"));
 @Component({
   components: {
     HelloWorld,
-    OtherComp
+    OtherComp,
   },
 })
-export default class App extends Vue { }
+export default class App extends Vue {}
 </script>
 
 <style>

@@ -1,8 +1,11 @@
 const { defineConfig } = require("@vue/cli-service");
 const ModuleFederationPlugin =
   require("webpack").container.ModuleFederationPlugin;
+
+const publicPath = process.env.PUBLIC_PATH || "http://localhost:8080/"
+
 module.exports = defineConfig({
-  publicPath: "http://localhost:8080/",
+  publicPath,
   transpileDependencies: false,
   configureWebpack: {
     optimization: {

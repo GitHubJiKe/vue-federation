@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    I'm in host
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
@@ -14,7 +15,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     HelloWorld,
   },
 })
-export default class App extends Vue { }
+export default class App extends Vue {}
 </script>
 
 <style>

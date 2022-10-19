@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
+        "build": "export PUBLIC_PATH=https://vue-federtaion-consumer.vercel.app/ && export REMOTE_PATH=https://vue-federtaion-host.vercel.app/  && vue-cli-service build",
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
